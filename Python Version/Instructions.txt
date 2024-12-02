@@ -1,0 +1,13 @@
+Written by William Hatty on 10/24/24
+
+Hello! 
+
+- This package should allow for a quick and easy generation of the scripts for adding bins to AS 
+(yes I know we have an excel sheet someplace for this with all the formulas, 
+but this is less steps and requires no formatting of the data taken from AS - if you've got python installed, its plug and play)
+
+- If adding via a bin export file (via AS console - export bins), all that is required is that you place
+the csv in the same folder as this file is being run and name it "bins.csv." From there, you would open a terminal
+in powershell or command prompt and run ".\addBinScriptGenerator.py WAREHOUSE_NUM ZONE" 
+- enter your warehouse num (seen in the sheet as 001 or something) and your Zone (usually like AS1 or something)
+- From there, you should be able to take the generated SQL file and run that in ExactaDB to import bins successfully.
